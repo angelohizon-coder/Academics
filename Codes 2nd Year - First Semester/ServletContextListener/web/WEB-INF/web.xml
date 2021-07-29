@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    
+    <context-param>
+        <param-name>HEADER</param-name>
+        <param-value>Beer App Version 2.0</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>breed</param-name>
+        <param-value>Great Dane</param-value>
+    </context-param>
+    
+    <listener>
+        <listener-class>
+            MyServletContextListener
+        </listener-class>
+    </listener>
+    
+    <context-param>
+        <param-name>myMessage</param-name>
+        <param-value>Message from ServletContext</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>myEmail</param-name>
+        <param-value>angelolouis.hizon.iics@ust.edu.ph</param-value>
+    </context-param>
+    
+    <servlet>
+        <servlet-name>ServletOne</servlet-name>
+        <servlet-class>controllers.ServletOne</servlet-class>
+        <init-param>
+            <param-name>username</param-name>
+            <param-value>admin</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>123456</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ListenerTester</servlet-name>
+        <servlet-class>ListenerTester</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletOne</servlet-name>
+        <url-pattern>/ServletOne</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>ServletTwo</servlet-name>
+        <servlet-class>controllers.ServletTwo</servlet-class>
+        <init-param>
+            <param-name>faveCoffee</param-name>
+            <param-value>Cafe Americano</param-value>
+        </init-param>
+        <init-param>
+            <param-name>faveBeer</param-name>
+            <param-value>Corona Light</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ServletTwo</servlet-name>
+        <url-pattern>/ServletTwo</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ListenerTester</servlet-name>
+        <url-pattern>/ListenerTester</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error/404.jsp</location>
+    </error-page>
+    
+</web-app>

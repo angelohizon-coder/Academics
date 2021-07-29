@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/*UNIVERSAL*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+.about_title, .project_title, .contact_title{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/*NAVIGATION*/
+
+.navigation_bar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.logo a{
+	font-size: 32px;
+	color: #fff;
+}
+
+/*MENU BAR*/
+
+.navigation_bar_items ul{
+	display: flex;
+}
+
+.navigation_bar_items ul li{
+	margin: 0 10px;
+}
+
+.navigation_bar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+	transition: ease;
+	padding: 10px;
+}
+
+.navigation_bar_items ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+/*HOME*/
+
+.image{
+	background: url('Images/p1.jpg') no-repeat top center;
+
+	/*PARALLAX EFFECT*/
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 0px;
+	width: 100%;
+	height: 755px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*BANNER QUOTE*/
+
+.image_content{
+	text-align: center;
+	color: #fff;
+}
+
+.image_content h1{
+	text-transform: : uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.image_content h1 span{
+	color: #fb2274;
+}
+
+/*ABOUT*/
+
+.about{
+	padding: 0px;
+	width: 100%;
+	height: 755px;
+	border-style: outset;
+}
+
+/*SEPERATES THE ABOUT BLOCK INTO TWO AND PLACE THEM INTO A SINGLE ROW*/
+
+.about_compartments{
+	display: flex;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/*LEFT SIDE OF THE ABOUT DIV*/
+
+.about_left{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+
+.about_picture img{
+	width: 60%;
+	height: 60%;
+	cursor: pointer;
+}
+
+/*RIGHT SIDE OF THE ABOUT DIV*/
+
+.about_right{
+	width: 50%;
+	height: 100%;
+}
+
+.information {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  	border-radius: 5px;
+  	overflow: hidden;
+ 	background: #000;
+}
+
+/*ACCORDION*/
+
+.accordion_label, .accordion_content{
+	padding: 14px 20px;
+	text-align: center;
+}
+
+.accordion_label {
+  	display: block;
+  	color: #fff;
+  	font-weight: 500;
+  	cursor: pointer;
+  	position: relative;
+  	transition: background 0.1s;
+}
+
+.accordion_label:hover {
+  	background: rgba(0, 0, 0, 0.1);
+  	transform: scale(1.1);
+}
+
+.accordion_content{
+  	background: #fff;
+  	line-height: 1.6;
+  	font-size: 14px;
+  	display: none;
+  	width: auto;
+  	height: auto;
+}
+
+/*EXPERTISE*/
+
+.accordion_content_logo{
+	justify-content: space-around;
+	display: flex;
+}
+
+.accordion_content_logo img{
+	height: 25%;
+	width: 25%
+}
+
+/*HOBBIES*/
+
+.accordion_content_images{
+	display: flex;
+}
+
+.accordion_content_images img{
+	height: 25%;
+	width: 25%;
+}
+
+.accordion_content_label{
+	display: flex;
+	justify-content: space-around;
+	font-size: 14px;
+}
+
+.accordion_input {
+  	display: none;
+}
+
+.accordion_input:checked ~ .accordion_content {
+  	display: block;
+}
+
+/*PROJECTS*/
+
+.project{
+	background: url('Images/p1.jpg') no-repeat top center ;
+
+	/*PARALLAX EFFECT*/
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	padding: 0px;
+	width: 100%;
+	height: 755px;
+
+	color: #fff;
+}
+
+/*PICTURES OF THE PROJECT*/
+
+.project_picture{
+	display: flex;
+	justify-content: space-around;
+	overflow: hidden;
+	position: relative;
+}
+
+.project_picture img{
+	height: 80%;
+	width: 80%;
+ 	cursor: pointer;
+}
+
+.project_picture img:hover{
+	transform: scale(1.1);
+}
+
+/*REASON WHY MARGIN-LEFT IS 6% SO THAT THE IMAGE CAN BE PROPORTIONAL WITH THE OTHER IMAGES*/
+
+.project_notepad{
+	margin-left: 6%;
+}
+
+/*DESCRIPTION OF THE PROJECT*/
+
+.project_description{
+	display: flex;
+	justify-content: space-around;
+	font-size: 18px;	
+	text-align: center;
+}
+
+.project_description h3{
+	padding-bottom: 25px;
+}
+
+.project_description a{
+	color: #fff;
+	text-decoration-line: underline;
+}
+
+/*DETAILS THE MESSAGE FOR THE USERS TO MAKE IT APPEALING AND UNDERSTANDABLE*/
+
+.project_footer{
+	padding-top: 90px;
+	padding-left: 17.5%;
+	padding-right: 17.5%;
+	font-size: 16px;	
+}
+
+.project_footer p{
+	background-color: rgba(0,0,0,0.3);
+	padding: 10px;
+	text-align: center;
+}
+
+/*CONTACT*/
+
+.contact{
+	padding: 0px;
+	width: 100%;
+	height: 755px;
+	border-style: outset;
+}
+
+/*SEPARATES THE CONTACT DIV INTO TWO COLUMN*/
+
+.contact_compartments{
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+
+/*SEPERATES THE TOP AND BOTTOM SIDE OF THE CONTACT SOCIAL MEDIA INTO TWO ROWS*/
+
+.row_one, .row_two{
+	display: flex;
+}
+
+/*TO PREVENT THE IMAGE FROM AFFECTING OTHER ELEMENT*/
+
+.element{
+	overflow: hidden;
+}
+
+/*LEFT COLUMN OF THE CONTACT DIV*/
+
+.contact_social_media{
+	width: 100%;
+	margin-left: 150px;
+	margin-top: 25px;
+}
+
+.contact_social_media img{
+	height: 90%;
+	width: 90%;
+}
+
+.contact_social_media img:hover{
+	transform: scale(1.025);
+}
+
+/*RIGHT COLUMN OF THE CONTACT DIV*/
+
+.contact_information{
+	width: 100%;
+	padding: 20px;
+	text-align: left;
+}
+
+.contact_information ul li{
+	margin-bottom: 30px;
+}
+
+.contact_input{
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none;
+}
+
+.contact_submit{
+	padding: 12px 20px;
+  	border: none;
+  	cursor: pointer;
+  	background-color: #000;
+  	color: #fff;
+  	width: 30%;
+}
+
+.contact_submit:hover{
+	background-color: #515151;
+}
+
+.contact footer{
+	text-align: center;
+}
+
+/*INCASE OF THE RESOLUTION OF THE "IN-BROWSER" IS ATLEAST 780 PX OR SIMPLY ABOVE IT*/
+
+@media (min-height: 780px){
+	.image, .about, .project, .contact{
+		height: 790px;
+	}
+}
+
+
+/*INCASE OF THE WIDTH GOING BELOW THE THRESHOLD OF 800 PX*/
+
+@media (max-width: 800px){
+	.navigation_bar{
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		line-height: 40px;
+	}
+	.navigation_bar_items ul{
+		flex-direction: column;
+
+	}
+
+	.row_one, .row_two{
+		flex-direction: column;
+	}
+
+	.contact_social_media img{
+		height: 40%;
+		width: 40%;
+	}
+
+	.about{
+		height: 550px;
+	}
+
+	.accordion_content_text{
+		  white-space: nowrap; 
+		  width: 100%; 
+		  overflow: hidden;
+		  text-overflow: clip; 
+	}
+}

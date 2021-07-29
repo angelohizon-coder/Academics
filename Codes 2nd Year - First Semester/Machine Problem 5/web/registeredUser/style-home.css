@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/* UNIVERSAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+.about_title, .project_title, .info_title{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navigation_bar{
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 32px;
+    color: #fff;
+}
+
+.navigation_bar_items ul{
+    display: flex;
+}
+
+.navigation_bar_items ul li{
+    margin: 0 10px;
+}
+
+.navigation_bar_items ul li a{
+    text-transform: uppercase;
+    color: #fff;
+    transition: 0.6s ease;
+    padding: 10px;
+}
+
+.navigation_bar_items ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+/* BANNER IMAGE */
+
+.image{
+    background: url('Images/p1.jpg') no-repeat top center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0px;
+    width: 100%;
+    height: 755px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_content{
+    text-align: center;
+    color: #fff;
+}
+
+.image_content h1{
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.image_content h1 span{
+    color: #fb2274;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    background: url('Images/p24.png') no-repeat top center ;
+
+    background-position: center;
+    background-size: cover;
+
+    padding: 0px;
+    width: 100%;
+    height: 755px;
+    
+    border-style: outset;
+}
+
+.about_compartments{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about_left{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.about_picture img{
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.btn{
+    width: 50%;
+    background: none;
+    border: 2px solid #000;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.about_right{
+    width: 50%;
+    height: 100%;
+}
+
+.information {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    background: #000;
+}
+
+.accordion_label, .accordion_content{
+    padding: 14px 20px;
+    text-align: center;
+}
+
+.accordion_label{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+}
+
+.accordion_label:hover{
+    background: rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.accordion_content{
+    background: #fff;
+    line-height: 1.6;
+    font-size: 14px;
+    display: none;
+    width: auto;
+    height: auto;
+}
+
+.accordion_content_logo{
+    justify-content: space-around;
+    display: flex;
+}
+
+.accordion_content_logo img{
+    height: 25%;
+    width: 25%
+}
+
+.accordion_input{
+    display: none;
+}
+
+.accordion_input:checked ~ .accordion_content{
+    display: block;
+}
+
+/* PROJECT SECTION */
+
+.project{
+    background: url('Images/p1.jpg') no-repeat top center ;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0px;
+    width: 100%;
+    height: 755px;
+
+    color: #fff;
+}
+
+.project_picture{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    position: relative;
+}
+
+.project_picture img{
+    height: 80%;
+    width: 80%;
+    cursor: pointer;
+}
+
+.project_picture img:hover{
+    transform: scale(1.025);
+}
+
+.project_notepad{
+    margin-left: 6%;
+}
+
+.project_description{
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;	
+    text-align: center;
+}
+
+.project_description h3{
+    padding-bottom: 25px;
+}
+
+.project_description a{
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.project_footer{
+    padding-top: 90px;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+    font-size: 16px;	
+}
+
+.project_footer p{
+    background-color: rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+/* INFORMATION SECTION */
+
+.info{
+    background: url('Images/p24.png') no-repeat top center ;
+
+
+    background-position: center;
+    background-size: cover;
+
+    padding: 0px;
+    width: 100%;
+    height: 755px;
+    
+    border-style: outset;
+}
+
+
+.info_compartments{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.test{
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.row_one, .row_two{
+    display: flex;
+}
+
+.element{
+    overflow: hidden;
+}
+
+.info_social_media{
+    width: 100%;
+}
+
+.info_social_media img{
+    height: 90%;
+    width: 90%;
+}
+
+.info_social_media img:hover{
+    transform: scale(1.025);
+}
+
+.info_information{
+    width: 100%;
+}
+
+.anime{
+    margin-top: 2.5%;
+}
+
+.anime h3{
+    padding-bottom: 10px;
+    text-decoration: underline;
+}
+
+.anime_image{
+    display: flex;
+    justify-content: space-around;
+}
+
+.anime_image img{
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2.5px;
+}
+
+.anime_image img:hover{
+    transform: scale(1.025);
+}
+
+.anime_description{
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.portfolio_footer{
+    padding-top: 5%;
+    color: #000;
+    text-align: center;
+}
+
+/* MEDIA QUERY */
+
+@media (min-height: 780px){
+    .image, .about, .project{
+	height: 790px;
+    }
+}
+
+@media (max-width: 800px){
+    .navigation_bar{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	line-height: 40px;
+    }
+    
+    .navigation_bar_items ul{
+	flex-direction: column;
+    }
+
+    .about{
+	height: 550px;
+    }
+
+    .accordion_content_text{
+	white-space: nowrap; 
+	width: 100%; 
+	overflow: hidden;
+	text-overflow: clip; 
+    }
+    
+    .info_social_media{
+        padding-top: 20%;
+    }
+    
+    .info_social_media img{
+	height: 90%;
+	width: 90%;
+    }
+    
+    .dropbtn, .dropdown-content{
+        width: 160px;
+    }
+}
