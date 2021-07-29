@@ -1,0 +1,43 @@
+Collections
+ - mutable data structure
+ - can accept objects only
+	ie: a collection of Integer Objects
+ - thread-safe - can be used / accessed by multiple concurrent users
+ - heavy weight
+
+Arrays
+ - immutable data structure
+ - can accept both primitive values and objects
+	ie: an array of int / an array of String / array of Employees
+ - not thread safe
+ - lightweight
+
+Set
+ - Unordered collection
+ - unique
+
+List
+ - Ordered Collection
+ - duplicates are permitted
+
+
+Map
+
+Iterator 
+ - iteration is the process of retrieving each object inside a structure
+ - Iterator can iterate forward	(List and Set)
+ - ListIterator can iterate forward and backward (List only)
+
+Generics
+ - it provides a compile time safety feature
+
+
+java.lang.Comparable vs java.util.Comparator
+- 1 column sort		 - multiple column sort
+
+
+Things to review before doing the Final Exercise
+ - Exception Handling
+ - GUI and Events
+ - File IO / IO / File Serializing
+ - Collection
