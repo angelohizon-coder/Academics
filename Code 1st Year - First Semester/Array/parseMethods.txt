@@ -1,0 +1,19 @@
+The Parse Methods
+
+String str1 = "100";
+
+byte  b = Byte.parseByte(str1);
+short s = Short.parseShort(str1);
+int   i = Integer.parseInt(str1);
+long lo = Long.parseLong(str1);
+
+
+String str2 = "123.45";
+
+float fl = Float.parseFloat(str2);
+double d = Double.parseDouble(str2);
+
+
+String str3 = "true";
+
+boolean bo = Boolean.parseBoolean(str3);
